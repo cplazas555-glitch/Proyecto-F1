@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html lang='es'>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>Portal F1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel='stylesheet' href='css/estilos.css'>
 
 </head>
-<body>
-    <h1><img src="img/Logo F1.png" alt="Logo F1" height="60"></h1>
-    <p class='text-center'>Bienvenido al Portal F1</p>
 
-    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="img/Logo-F1.png" alt="Logo F1" height="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pilotos">Pilotos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#escuderias">Escuderías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="inicio">
+
+        <div class="container text-center">
+            <h1 class="text-center">Portal F1</h1>
+            <p class='text-center'>Aqui encontraras mas de la F1</p>
+            <a href="#pilotos" class="btn btn-danger">Ver Pilotos</a>
+        </div>
+    </section>
+    <section id="pilotos">
+        <div class="container">
+            <h2 class="text-center">Pilotos</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col" data-escuderia="red-bull">
+
+                    <div class="card h-100">
+                        <img src="img/max-F1.avif" class="card-img-top" alt="Max Emilian Verstappen">
+                        <div class="card-body">
+                            <h5 class="card-title">Max Emilian Verstappen</h5>
+                            <p class="card-text">Piloto más joven en ganar una carrera de F1: 18 años y 228
+                                días (GP de
+                                España 2016).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-escuderia="ferrari">
+
+                    <div class="card h-100" >
+                        <img src="img/charles-F1.jpg" class="card-img-top" alt="Charles Leclerc">
+                        <div class="card-body">
+                            <h5 class="card-title">Charles Leclerc</h5>
+                            <p class="card-text">Apasionado de los videojuegos y la música: Durante la pandemia de 2020 destacó en las carreras virtuales de eSports y en su faceta musica.</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col" data-escuderia="aston-martin">
+
+                    <div class="card h-100" >
+                        <img src="img/alonso-F1.jpeg" class="card-img-top" alt="Fernando Alonso">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando Alonso</h5>
+                            <p class="card-text">Bicampeón de las 24 Horas de Le Mans (2018, 2019) y ganador de las 24 Horas de Daytona (2019).</p>
+                        </div>
+                    </div>
+                </div>            
+            
+            <div class="col" data-escuderia="williams">
+
+                    <div class="card h-100" >
+                        <img src="img/sainz-F1.avif" class="card-img-top" alt="Carlos Sainz">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos Sainz</h5>
+                            <p class="card-text">4 veces ganador del Rally Dakar (2010, 2018, 2020 y 2024)</p>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>

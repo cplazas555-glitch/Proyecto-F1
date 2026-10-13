@@ -1,3 +1,11 @@
 body{
-    color:red;
+    color:rgb(169, 32, 32);
+    background-color:black;
+}
+#inicio{
+    padding:100px 0;
+}
+.card-img-top{
+    object-fit:cover;
+    height: 350px;
 }
